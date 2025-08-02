@@ -80,7 +80,7 @@ label {
 }
 
 input[type="text"], input[type="password"], input[type="tel"] {
-    width: 90%;
+    width: 100%;
     padding: 12px 8px;
     border: none;
     border-radius: 10px;
@@ -103,7 +103,7 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
 }
 
 .id-container input[type="text"] {
-    flex: 0.87;
+    flex: 1;
 }
 
 .phone-container {
@@ -113,7 +113,7 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
 }
 
 .phone-container input[type="tel"] {
-    flex: 0.87;
+    flex: 1;
 }
 
 .duplicate-check-btn, .verification-btn {
@@ -172,7 +172,7 @@ input[type="text"]::placeholder, input[type="password"]::placeholder, input[type
     border: none;
     outline: none;
     font-size: 15px;
-    flex: 0.83;
+    flex: 1;
     padding: 12px 8px;
     border-radius: 10px;
     background-color: #F4F4F4;
