@@ -129,9 +129,8 @@
                                       <div class="o-seven-box">
                                     <img src="../image/1.png" class="c2">
                                     <div style="width: 100%; height: 100%; background-color: rgba(0,0,0,0.3); border-radius: 50%; position: absolute; top:0px"></div>
-
-                                </div>
-                                    <h5 style="display: block;font-weight: bold; margin-top: 10px; text-align: center;" class="API-name">첫 도전자</h5>
+                                    </div>
+                                    <h5 style="display: block;font-weight: bold; margin-top: 10px; text-align: center;">첫 도전자</h5>
                                 </div>
                                 <div class="seven-box">
                                     <div class="o-seven-box">
@@ -221,7 +220,7 @@
                 const h5 = box.querySelector("h5");
                 if (!h5) return;
 
-                h5.innerHTML = item.title || item.content || "뱃지";
+                // h5.innerHTML = item.title || item.content || "뱃지";
 
                 const overlay = box.querySelector(".o-seven-box > div");
                 if (overlay && h5.innerHTML === (item.title || item.content)) {
@@ -239,7 +238,7 @@
             const boxes = document.querySelectorAll(".b-box");
             top3.forEach((item, i) => {
                 if (boxes[i]) {
-                boxes[i].querySelector("h5.API-name").textContent = item.title;
+                // boxes[i].querySelector("h5.API-name").textContent = item.title;
                 boxes[i].querySelector(".progress").style.width = item.progress + "%";
                 boxes[i].querySelector("span").textContent = item.progress + "%";
                 boxes[i].querySelector("p.si").textContent = item.description;
