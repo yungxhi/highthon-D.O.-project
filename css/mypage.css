@@ -102,6 +102,7 @@ ul.list {
   .tab-content {
     display: none;
     padding: 10px;
+    /* border: #818181; */
   }
   .show {
     display: block;
@@ -192,3 +193,23 @@ ul.list {
     position: relative;
   }
 
+.none {
+  display: none;
+}
+
+
+.progress {
+  height: 7px; 
+  position: absolute; 
+  width: 90%; 
+  background-color: #FF7D7D; 
+  border-radius: 20px;
+}
+
+.h4- {
+  
+  color: #FFF;
+  bottom: 20px;
+  position: absolute;
+  left: 23px;
+}
