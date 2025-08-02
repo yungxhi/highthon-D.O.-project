@@ -12,50 +12,55 @@
             <img src="../image/signup-page-img.png" alt="회원가입 이미지">
         </div>
         <div class="container">
-            <p>회원가입</p>
-            <form>
-            <div>
-                <label for="name">이름</label>
-                <input type="text" id="name" name="name" placeholder="이름을 입력해주세요.">
-            </div>
-            <div>
-                <label for="id">아이디</label>
-                <div class="id-container">
-                    <input type="text" id="id" name="id" placeholder="아이디를 입력해주세요.">
-                    <button type="button" class="duplicate-check-btn">중복확인</button>
+            <div class="form-container">
+                <p>회원가입</p>
+                <form>
+                <div>
+                    <label for="name">이름</label>
+                    <input type="text" id="name" name="name" placeholder="이름을 입력해주세요.">
                 </div>
-                <span class="id-hint">4~12자/영문 소문자 (숫자 조합 가능)</span>
-            </div>
-            <div>
-                <label for="password">비밀번호</label>
-                <input type="password" id="password" name="password" placeholder="비밀번호를 입력해주세요.">
-            </div>
-            <div>
-                <input type="password" id="password-confirm" name="password-confirm" placeholder="비밀번호를 다시 입력해주세요.">
-                <span class="password-hint">6~20자/영문 대문자, 소문자, 숫자, 특수문자 중 2가지 이상 조합</span>
-            </div>
-            <div>
-                <label for="email">이메일</label>
-                <div class="email-container">
-                    <input type="text" id="email-input" name="email-input" placeholder="이메일을 입력해주세요.">
-                    <span class="email-at">@</span>
-                    <select id="email-domain" name="email-domain">
-                        <option value="">도메인 선택</option>
-                        <option value="gmail.com">gmail.com</option>
-                        <option value="naver.com">naver.com</option>
-                        <option value="daum.net">daum.net</option>
-                        <option value="hotmail.com">hotmail.com</option>
-                        <option value="outlook.com">outlook.com</option>
-                        <option value="yahoo.com">yahoo.com</option>
-                    </select>
+                <div>
+                    <label for="id">아이디</label>
+                    <div class="id-container">
+                        <input type="text" id="id" name="id" placeholder="아이디를 입력해주세요.">
+                        <button type="button" class="duplicate-check-btn">중복확인</button>
+                    </div>
+                    <span class="id-hint">4~12자/영문 소문자 (숫자 조합 가능)</span>
+                </div>
+                <div>
+                    <label for="password">비밀번호</label>
+                    <input type="password" id="password" name="password" placeholder="비밀번호를 입력해주세요.">
+                </div>
+                <div>
+                    <input type="password" id="password-confirm" name="password-confirm" placeholder="비밀번호를 다시 입력해주세요.">
+                    <span class="password-hint">6~20자/영문 대문자, 소문자, 숫자, 특수문자 중 2가지 이상 조합</span>
+                </div>
+                <div>
+                    <label for="email">이메일</label>
+                    <div class="email-container">
+                        <input type="text" id="email-input" name="email-input" placeholder="이메일을 입력해주세요.">
+                        <span class="email-at">@</span>
+                        <select id="email-domain" name="email-domain">
+                            <option value="">도메인 선택</option>
+                            <option value="gmail.com">gmail.com</option>
+                            <option value="naver.com">naver.com</option>
+                            <option value="daum.net">daum.net</option>
+                            <option value="hotmail.com">hotmail.com</option>
+                            <option value="outlook.com">outlook.com</option>
+                            <option value="yahoo.com">yahoo.com</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label for="phone">전화번호</label>
+                    <div class="phone-container">
+                        <input type="tel" id="phone" name="phone" placeholder="전화번호를 입력해주세요.">
+                        <button type="button" class="verification-btn">인증번호 받기</button>
+                    </div>
                 </div>
             </div>
-            <div>
-                <label for="phone">전화번호</label>
-                <div class="phone-container">
-                    <input type="tel" id="phone" name="phone" placeholder="전화번호를 입력해주세요.">
-                    <button type="button" class="verification-btn">인증번호 받기</button>
-                </div>
+            <div class="submit-container">
+                <button type="submit" class="submit-btn">회원가입</button>
             </div>
         </form>
         </div>
