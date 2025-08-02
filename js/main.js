@@ -1,4 +1,4 @@
-const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJkb0BkZ3N3LmhzLmtyIiwiaWF0IjoxNzU0MTY1MzczLCJleHAiOjE3NTQxNjg5NzMsInN1YiI6IjEiLCJwdXJwb3NlIjoiYWNjZXNzIn0.evoRixsmlbcKpf-xPdH_0442KZq8WifDdlE4Xdbm-Xc';
+const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJkb0BkZ3N3LmhzLmtyIiwiaWF0IjoxNzU0MTY5MTgyLCJleHAiOjE3NTQyMDUxODIsInN1YiI6IjEiLCJwdXJwb3NlIjoiYWNjZXNzIn0.bcDE9X5FeL1W4_nK4V1Z7soQuMX41W38eGbs_73cEqw';
 
 function loadMissions() {
   fetch('http://10.10.6.55:8080/missions', {
@@ -33,9 +33,10 @@ function loadMissions() {
       doneButt.textContent = '소감 쓰기';
 
       doneButt.addEventListener('click', function() {
-        // 미션 ID와 내용 둘 다 저장
-        localStorage.setItem('selectedMissionId', mission.id);
-        localStorage.setItem('reviewTarget', mission.content);
+        // 클릭한 버튼의 부모 div에서 미션 텍스트를 가져와서 localStorage에 저장 후 이동
+        const parentDiv = this.closest('.haveTo');
+        const missionText = parentDiv.querySelector('p').textContent;
+        localStorage.setItem('reviewTarget', missionText);
         window.location.href = 'thought.html';
       });
 
