@@ -14,7 +14,7 @@ header {
 
 h1 {
     color: #FF3718;
-    font-weight: 900;
+    font-weight: 1000;
     margin: 15px 30px;
 }
 
@@ -69,7 +69,9 @@ nav .fi {
     border-top: 1px solid rgb(222, 222, 222);
     padding: 15px 0px;
 }
-
+#profile span {
+    font-size: 0.875em;
+}
 #profile small {
     color: gray;    
 }
