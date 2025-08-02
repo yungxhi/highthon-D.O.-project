@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 중복 확인 버튼 이벤트 리스너
     document.getElementById('duplicate-check-button').addEventListener('click', checkDuplicate);
 
-    // 폼 제출 이벤트 리스너
+    // 폼 제출 이벤트 리스너.
     document.getElementById('signup-form').addEventListener('submit', async function(e) {
         e.preventDefault();
         const submitButton = document.querySelector('.submit-btn');
