@@ -88,7 +88,8 @@ ul.list {
     color: grey;
     text-decoration: none;
     cursor: pointer;
-    width: 41.4%;
+    width: 39.8%;
+    margin-top: 0px;
   }
   .orange {
     border-top: 2px solid #FF7676;
