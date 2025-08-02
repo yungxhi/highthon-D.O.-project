@@ -36,20 +36,20 @@
                 <div class="row">
                     <div class="question">
                         <small>상대방의 반응은 어땠나요?</small>
-                        <input type="text" placeholder="미션을 수행했을 때 상대방의 반응이 어땠는지 생각해보세요." style="width: 500px;">
+                        <input type="text" placeholder="미션을 수행했을 때 상대방의 반응이 어땠는지 생각해보세요." style="width: 500px;" id="reaction">
                     </div>
                     <div class="question">
                         <small>미션 난이도는 어땠나요?</small>
                         <div id="buttons">
-                            <button>상</button>
-                            <button>중</button>
-                            <button>하</button>
+                            <button type="button" data-value="상" class="difficulty">상</button>
+                            <button type="button" data-value="중" class="difficulty">중</button>
+                            <button type="button" data-value="하" class="difficulty">하</button>
                         </div>
                     </div>
                 </div>
                 <div class="question">
                     <small>미션을 완료한 소감은 어떤가요?</small>
-                    <input type="text" placeholder="미션을 수행하고 나서 느낀 점을 작성해보세요." style="width: 900px;">
+                    <input type="text" placeholder="미션을 수행하고 나서 느낀 점을 작성해보세요." style="width: 900px;" id="impression">
                 </div>
                 <button id="done">저장하기</button>
             </div>

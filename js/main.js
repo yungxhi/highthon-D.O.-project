@@ -33,10 +33,9 @@ function loadMissions() {
       doneButt.textContent = '소감 쓰기';
 
       doneButt.addEventListener('click', function() {
-        // 클릭한 버튼의 부모 div에서 미션 텍스트를 가져와서 localStorage에 저장 후 이동
-        const parentDiv = this.closest('.haveTo');
-        const missionText = parentDiv.querySelector('p').textContent;
-        localStorage.setItem('reviewTarget', missionText);
+        // 미션 ID와 내용 둘 다 저장
+        localStorage.setItem('selectedMissionId', mission.id);
+        localStorage.setItem('reviewTarget', mission.content);
         window.location.href = 'thought.html';
       });
 
