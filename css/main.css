@@ -49,6 +49,7 @@ li {
   border-radius: 5px;
   margin: 15px 0px;
   font-weight: 600;
+  text-align: left;
 }
 
 #this {
@@ -56,11 +57,11 @@ li {
   color: #DA6262;
 }
 
-nav .fi {
+nav img {
   margin-right: 20px;
-  color: #DA6262;
-  position: relative;
-  top: 3px;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
 }
 
 #profile {
@@ -112,6 +113,53 @@ main {
     display: flex;
     justify-content: center;
     gap: 40px;
+}
+
+#email-section {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.email-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#email-input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.email-at {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    margin: 0 5px;
+}
+
+#email-domain {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    cursor: pointer;
+    min-width: 120px;
+}
+
+#email-domain option {
+    background: white;
+    color: #333;
 }
 
 #mission, #medal {
