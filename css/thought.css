@@ -1,0 +1,164 @@
+body {
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    width: 100%;
+    border: 1px solid rgb(222, 222, 222);
+    height: 70px;
+  }
+  
+  h1 {
+    color: #FF3718;
+    font-weight: 900;
+    margin: 15px 30px;
+  }
+  
+  #layout {
+    display: flex;
+    flex: 1;
+    height: calc(100vh - 70px);
+  }
+  
+  nav {
+    width: 12em;
+    border-right: 1px solid rgb(222, 222, 222);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  main {
+    flex: 1;
+    padding: 20px;
+    overflow: auto;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0px;
+    margin: 40px 10px;
+  }
+  
+  li {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 15px 0px;
+    font-weight: 600;
+  }
+  
+  #this {
+    background-color: #FFE5E5;
+    color: #DA6262;
+  }
+  
+  nav .fi {
+    margin-right: 20px;
+    color: #DA6262;
+    position: relative;
+    top: 3px;
+  }
+  
+  #profile {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgb(222, 222, 222);
+    padding: 15px 0px;
+  }
+  
+  #profile small {
+    color: gray;
+  }
+  
+  #profile div {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  
+  #logout {
+    border: 0px solid black;
+    border-radius: 5px;
+    width: 90%;
+    align-self: center;
+    margin-top: 10px;
+  }
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#thoughts {
+    width: 90%;
+    height: 50%;
+    background-color: #FFE5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#thoughts h3 {
+    color: #5B2929;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.row {
+    display: flex;
+    gap: 110px;
+}
+
+#buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+}
+
+.question small {
+    color: #DA6262;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.question input {
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.question input::placeholder {
+    color: rgb(222, 222, 222);
+}
+
+.question button {
+    background-color: white;
+    border: none;
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    color: #DA6262;
+}
+
+#done {
+    background-color: #DA6262;
+    color: white;
+    border: none;
+    width: 910px;
+    height: 40px;
+    font-size: 11px;
+    border-radius: 5px;
+}
