@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>AI 미션 보기</title>
+</head>
+<body>
+  <h2>AI 미션 목록</h2>
+  <ul id="missionList"></ul>
+
+  <script>
+    const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJkb0BkZ3N3LmhzLmtyIiwiaWF0IjoxNzU0MTU4OTkyLCJleHAiOjE3NTQxNjI1OTIsInN1YiI6IjEiLCJwdXJwb3NlIjoiYWNjZXNzIn0.I8ILECG0oKtRwNZGtxS2iIGnU449pLtYPY4yYfrGZJ0'; // ← Bearer 토큰을 여기에 입력하세요
+
+    fetch('http://10.10.6.55:8080/missions/ai', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${token}`
+    }
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('서버 응답 오류: ' + response.status);
+      }
+      return response.json();
+    })
+    .then(json => {
+      const missions = json.data; // ← 여기 주의
+
+      if (!Array.isArray(missions)) {
+        throw new Error('미션 데이터가 배열 형태가 아닙니다.');
+      }
+
+      const optionElements = document.querySelectorAll('.option');
+
+      missions.forEach((mission, i) => {
+        const option = optionElements[i];
+        if (option) {
+          option.textContent = mission.content || mission.text || JSON.stringify(mission);
+        }
+      });
+    })
+    .catch(error => {
+      console.error('미션을 가져오는 중 오류 발생:', error.message);
+    });
+
+  </script>
+</body>
+</html>

@@ -1,23 +1,28 @@
-const selected = localStorage.getItem("selectedMission");
-
+const selected = localStorage.getItem("selectedMissions");
 const doingDiv = document.getElementById('doingMissions');
 
-const haveTo = document.createElement("div");
-haveTo.classList.add('haveTo');
+if (selected) {
+  const missions = JSON.parse(selected); // 문자열 → 배열
 
-const p = document.createElement("p");
-p.textContent = selected;
+  missions.forEach(missionText => {
+    const haveTo = document.createElement("div");
+    haveTo.classList.add('haveTo');
 
-const doneButt = document.createElement("button");
-doneButt.textContent = "소감 쓰기";
+    const p = document.createElement("p");
+    p.textContent = missionText;
 
-doneButt.addEventListener("click", function() {
-    const parentDiv = this.closest(".haveTo");
-    const missionText = parentDiv.querySelector("p").textContent;
-    localStorage.setItem("reviewTarget", missionText);
-    window.location.href = "thought.html"
-})
+    const doneButt = document.createElement("button");
+    doneButt.textContent = "소감 쓰기";
 
-haveTo.appendChild(p);
-haveTo.appendChild(doneButt);
-doingDiv.appendChild(haveTo);
+    doneButt.addEventListener("click", function() {
+        const parentDiv = this.closest(".haveTo");
+        const missionText = parentDiv.querySelector("p").textContent;
+        localStorage.setItem("reviewTarget", missionText);
+        window.location.href = "thought.html"
+    })
+
+    haveTo.appendChild(p);
+    haveTo.appendChild(doneButt);
+    doingDiv.appendChild(haveTo);
+  });
+}

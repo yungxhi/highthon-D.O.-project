@@ -148,6 +148,11 @@ main {
     color: #FD735E;
 }
 
+#doingMissions p{
+    width: 80%;
+    font-size: 15px;
+}
+
 #gettingMedal {
     display: flex;
     justify-content: space-between;
