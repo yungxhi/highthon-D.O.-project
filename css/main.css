@@ -117,7 +117,7 @@ main {
 #mission, #medals {
     border: 1px solid rgb(222, 222, 222);
     width: 35%;
-    height: 90%;
+    height: 80%;
     display: inline-block;
     border-radius: 20px;
     padding: 20px;
@@ -146,6 +146,10 @@ main {
 #title .fi {
     font-size: 20px;
     color: #FD735E;
+}
+
+#doingMissions {
+    overflow-y: scroll;
 }
 
 #doingMissions p{
