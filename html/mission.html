@@ -19,7 +19,7 @@
                 <ul>
                     <a href="main.html" style="text-decoration: none; color: black;"><li><i class="fi fi-rs-home"></i>홈</li></a>
                     <li id="this"><i class="fi fi-rr-book-bookmark"></i>미션</li>
-                    <li><i class="fi fi-rr-user"></i></i>마이페이지</li>
+                    <a href="mypage.html" style="text-decoration: none; color: black;"><li><i class="fi fi-rr-user"></i></i>마이페이지</li></a>
                 </ul>
             </div>
             <div id="profile">
@@ -34,19 +34,20 @@
             <h3>진행할 미션을 선택해주세요!<i class="fi fi-ss-cursor"></i></h3>
             <div id="missions">
                 <div class="mission">
-                    <span>미션 1</span>
-                    <button>선택</button>
+                    <span class="option">미션 1</span>
+                    <button onclick="handleClick(this)">선택</button>
                 </div>
                 <div class="mission">
-                    <span>미션 2</span>
-                    <button>선택</button>
+                    <span class="option">미션 2</span>
+                    <button onclick="handleClick(this)">선택</button>
                 </div>
                 <div class="mission">
-                    <span>미션 3</span>
-                    <button>선택</button>
+                    <span class="option">미션 3</span>
+                    <button onclick="handleClick(this)">선택</button>
                 </div>
             </div>
         </main>
     </div>
+    <script src="../js/mission.js"></script>
 </body>
 </html>

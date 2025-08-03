@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+
 </head>
 <body>
     <header>
@@ -33,11 +35,75 @@
             <div id="introduce"><img src="../image/main-banner-v2.png"></div>
             <div id="row">
                 <div id="mission">
-                    <span>진행중인 미션</span>
+                    <div id="title">
+                        <span>진행중인 미션</span>
+                        <a href="mission.html" style="text-decoration: none;"><i class="fi fi-br-plus"></i></a>
+                    </div>
+                    <div id="doingMissions">
+                    </div>
                 </div>
-                <div id="medal"></div>
+                <div id="medals">
+                    <span>진행중인 뱃지</span>
+                    <div id="gettingMedal">
+                        <div class="medal">
+                            <div class="appearance"><img src="../image/medal-lv3.png"></div>
+                            <div>뱃지 1</div>
+                            <div class="rate">
+                                <div class="all">
+                                    <div class="part"></div>
+                                </div>
+                                <div class="num">퍼센트</div>
+                            </div>
+                            <small class="explain">
+                                설명 1<br>
+                                설명 2
+                            </small>
+                        </div>
+                        <div class="medal">
+                            <div class="appearance"><img src="../image/medal-lv4.png"></div>
+                            <div>뱃지 1</div>
+                            <div class="rate">
+                                <div class="all">
+                                    <div class="part"></div>
+                                </div>
+                                <div class="num">퍼센트</div>
+                            </div>
+                            <small class="explain">
+                                설명 1<br>
+                                설명 2
+                            </small>
+                        </div>
+                        <div class="medal">
+                            <div class="appearance"><img src="../image/medal-lv5.png"></div>
+                            <div>뱃지 1</div>
+                            <div class="rate">
+                                <div class="all">
+                                    <div class="part"></div>
+                                </div>
+                                <div class="num">퍼센트</div>
+                            </div>
+                            <small class="explain">
+                                설명 1<br>
+                                설명 2
+                            </small>
+                        </div>
+                    </div>
+                    <button id="more">더 많은 뱃지 얻으러 가기</button>
+                    <span>현재 얻은 뱃지</span>
+                    <div id="gotMedal">
+                        <div class="dumi">
+                            <div class="got"><img src="../image/medal-lv1.png"></div>
+                            <div class="title">얻은 뱃지 1</div>
+                        </div>
+                        <div class="dumi">
+                            <div class="got"><img src="../image/medal-lv2.png"></div>
+                            <div class="title">얻은 뱃지 1</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
+    <script src="../js/main.js"></script>
 </body>
 </html>
