@@ -38,6 +38,12 @@ main {
   overflow: auto;
 }
 
+.fi {
+  margin-right: 20px;
+  color: #DA6262;
+}
+
+
 ul {
   list-style: none;
   padding: 0px;
