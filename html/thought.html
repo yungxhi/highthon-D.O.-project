@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.O.</title>
+    <link rel="stylesheet" href="../css/thought.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+</head>
+<body>
+    <header>
+        <h1>D.O.</h1>
+    </header>
+    <div id="layout">
+        <nav>
+            <div>
+                <ul>
+                    <a href="main.html" style="text-decoration: none; color: black;"><li><i class="fi fi-rs-home"></i>홈</li></a>
+                    <li id="this"><i class="fi fi-rr-book-bookmark"></i>미션</li>
+                    <li><i class="fi fi-rr-user"></i></i>마이페이지</li>
+                </ul>
+            </div>
+            <div id="profile">
+                <div>
+                    <span>대소마고</span>
+                    <small>@daegusomago2025</small>
+                </div>
+                <button id="logout">로그아웃</button>
+            </div>
+        </nav>
+        <main>
+            <div id="thoughts">
+                <h3 id="missionName">미션명</h3>
+                <div class="row">
+                    <div class="question">
+                        <small>상대방의 반응은 어땠나요?</small>
+                        <input type="text" placeholder="미션을 수행했을 때 상대방의 반응이 어땠는지 생각해보세요." style="width: 500px;" id="reaction">
+                    </div>
+                    <div class="question">
+                        <small>미션 난이도는 어땠나요?</small>
+                        <div id="buttons">
+                            <button type="button" data-value="상" class="difficulty">상</button>
+                            <button type="button" data-value="중" class="difficulty">중</button>
+                            <button type="button" data-value="하" class="difficulty">하</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="question">
+                    <small>미션을 완료한 소감은 어떤가요?</small>
+                    <input type="text" placeholder="미션을 수행하고 나서 느낀 점을 작성해보세요." style="width: 900px;" id="impression">
+                </div>
+                <button id="done">저장하기</button>
+            </div>
+        </main>
+    </div>
+    <script src="../js/thought.js"></script>
+</body>
+</html>

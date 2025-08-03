@@ -4,143 +4,169 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-}
-
-header {
+  }
+  
+  header {
     width: 100%;
     border: 1px solid rgb(222, 222, 222);
     height: 70px;
-}
-
-h1 {
+  }
+  
+  h1 {
     color: #FF3718;
     font-weight: 900;
     margin: 15px 30px;
-}
-
-#layout {
+  }
+  
+  #layout {
     display: flex;
     flex: 1;
     height: calc(100vh - 70px);
-}
-
-nav {
+  }
+  
+  nav {
     width: 12em;
     border-right: 1px solid rgb(222, 222, 222);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-main {
+  }
+  
+  main {
     flex: 1;
     padding: 20px;
     overflow: auto;
-}
-
-ul {
+  }
+  
+  ul {
     list-style: none;
     padding: 0px;
     margin: 40px 10px;
-}
-
-li {
+  }
+  
+  li {
     padding: 10px;
     border-radius: 5px;
     margin: 15px 0px;
     font-weight: 600;
-}
-
-#this {
+  }
+  
+  #this {
     background-color: #FFE5E5;
     color: #DA6262;
-}
-
-nav .fi {
+  }
+  
+  nav .fi {
     margin-right: 20px;
     color: #DA6262;
     position: relative;
     top: 3px;
-}
-
-#profile {
+  }
+  
+  #profile {
     display: flex;
     flex-direction: column;
     border-top: 1px solid rgb(222, 222, 222);
     padding: 15px 0px;
-}
-
-#profile span {
-    font-size: 0.875em;
-}
-
-#profile small {
-    color: gray;    
-}
-
-#profile div {
+  }
+  
+  #profile small {
+    color: gray;
+  }
+  
+  #profile div {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
-}
-
-#logout {
+  }
+  
+  #logout {
     border: 0px solid black;
     border-radius: 5px;
     width: 90%;
     align-self: center;
     margin-top: 10px;
-}
+  }
 
 main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#thoughts {
+    width: 90%;
+    height: 50%;
+    background-color: #FFE5E5;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 3%;
-}
-
-main h3 {
-    font-weight: 500;
-}
-
-main .fi {
-    margin-left: 30px;
-}
-
-#missions {
-    display: flex;
-    width: 100%;
     justify-content: space-evenly;
 }
 
-.mission {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgb(222, 222, 222);
-    padding: 20px;
-    gap: 20px;
-    width: 25%;
-    height: 90%;
-    text-align: center;
-    justify-content: center;
-    border-radius: 10px;
-    background-color: #FFE5E5;
+#thoughts h3 {
     color: #5B2929;
+    font-weight: 500;
+    margin: 0px;
 }
 
-.mission button {
-    border: 0px solid black;
-    color: #F1C8C8;
+.row {
+    display: flex;
+    gap: 110px;
+}
+
+#buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+}
+
+.question small {
+    color: #DA6262;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.question input {
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.question input:focus {
+  outline-color: #DA6262;
+}
+
+.question input::placeholder {
+    color: rgb(222, 222, 222);
+}
+
+.question button {
     background-color: white;
-    height: 30px;
+    border: none;
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    color: #DA6262;
+}
+
+#done {
+    background-color: #DA6262;
+    color: white;
+    border: none;
+    width: 910px;
+    height: 40px;
+    font-size: 11px;
     border-radius: 5px;
 }
 
-.mission:hover {
-    background-color: #F7A6A6;
-}
-
-.mission:hover button {
-    color: #DA6262;
+.selected:hover {
+  border: 1px solid #FF624A;
 }
