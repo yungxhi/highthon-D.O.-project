@@ -1,4 +1,4 @@
-const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJkb0BkZ3N3LmhzLmtyIiwiaWF0IjoxNzU0MTczMTc4LCJleHAiOjE3NTQyMDkxNzgsInN1YiI6IjEiLCJwdXJwb3NlIjoiYWNjZXNzIn0.ZeA87shDp7zMQnK68pPbrlJ_bPpks1oW1TKsJxGIOfk';
+const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJkb0BkZ3N3LmhzLmtyIiwiaWF0IjoxNzU0MTg3MzgxLCJleHAiOjE3NTQyMjMzODEsInN1YiI6IjEiLCJwdXJwb3NlIjoiYWNjZXNzIn0.U6KNTFKAJFMN8VpRWazHjx93YbFh3y_677OTBlYKGQY';
 
 // AI 미션 목록 불러와서 화면에 표시하는 함수
 function loadAIMissions() {

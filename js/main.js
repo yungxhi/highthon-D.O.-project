@@ -1,4 +1,4 @@
-const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJkb0BkZ3N3LmhzLmtyIiwiaWF0IjoxNzU0MTczMTc4LCJleHAiOjE3NTQyMDkxNzgsInN1YiI6IjEiLCJwdXJwb3NlIjoiYWNjZXNzIn0.ZeA87shDp7zMQnK68pPbrlJ_bPpks1oW1TKsJxGIOfk';
+const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJkb0BkZ3N3LmhzLmtyIiwiaWF0IjoxNzU0MTg3MzgxLCJleHAiOjE3NTQyMjMzODEsInN1YiI6IjEiLCJwdXJwb3NlIjoiYWNjZXNzIn0.U6KNTFKAJFMN8VpRWazHjx93YbFh3y_677OTBlYKGQY';
 
 function loadMissions() {
   fetch('http://10.10.6.55:8080/missions', {
