@@ -63,6 +63,12 @@ nav img {
   height: 20px;
   vertical-align: middle;
 }
+nav .fi {
+  margin-right: 20px;
+  color: #DA6262;
+  position: relative;
+  top: 3px;
+}
 
 #profile {
   display: flex;
@@ -162,10 +168,186 @@ main {
     color: #333;
 }
 
-#mission, #medal {
+#mission, #medals {
     border: 1px solid rgb(222, 222, 222);
-    width: 38%;
+    width: 35%;
     height: 90%;
     display: inline-block;
     border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#mission button:hover {
+  border: 1px solid #FF3718;
+}
+
+#more:hover {
+  background-color: #FF624A;
+}
+
+#title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#title span, #medals span {
+    display: inline-block;
+    background-color: #FD735E;
+    color: white;
+    text-align: center;
+    width: 110px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+#title .fi {
+    font-size: 20px;
+    color: #FD735E;
+}
+
+#title .fi:hover {
+  color: #FF624A;
+}
+
+#doingMissions {
+  margin-top: 20px;
+  height: 90%;
+  overflow-y: scroll;
+}
+
+#doingMissions p{
+    width: 80%;
+    font-size: 15px;
+}
+
+#gettingMedal {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px
+}
+
+.medal {
+    border: 0px solid rgb(222, 222, 222);
+    width: 30%;
+    height: 200px;
+    border-radius: 20px;
+    background-color: #FFF3F3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.appearance {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.appearance img {
+    width: 100%;
+    height: 100%;
+}
+
+.rate {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.all {
+    width: 60%;
+    height: 10px;
+    background-color: #FFC6C6;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.part {
+    width: 70%;
+    height: 10px;
+    background-color: #FF7D7D;
+    border-radius: 5px;
+}
+
+.num {
+    color: #F46666;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.explain {
+    color: gray;
+}
+
+#medals button {
+    margin-top: 20px;
+    background-color: #FD735E;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 35px;
+    line-height: 25px;
+    font-size: 13px;
+    border-radius: 10px;
+    border: 0px solid black;
+    margin-bottom: 20px;
+}
+
+#gotMedal {
+    display: flex;
+    gap: 10px;
+}
+
+.dumi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.got {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.got img {
+    width: 100%;
+    height: 100%;
+}
+
+.haveTo {
+    background-color: #FFE5E5;
+    padding: 10px 30px;
+    border-radius: 15px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.haveTo p {
+    display: inline-block;
+    color: #5B2929;
+    font-weight: 600;
+}
+
+.haveTo button {
+    height: 30px;
+    width: 70px;
+    border: 0px solid black;
+    background-color: white;
+    color: #5B2929;
+    font-weight: 700;
+    border-radius: 5px;
 }
