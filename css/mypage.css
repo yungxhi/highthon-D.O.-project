@@ -210,9 +210,11 @@ ul.list {
     border-radius: 50%; 
     position: relative;
   }
+
 .none {
   display: none;
 }
+
 .progress {
   height: 7px; 
   position: absolute; 
@@ -226,4 +228,4 @@ ul.list {
   bottom: 20px;
   position: absolute;
   left: 23px;
-}
+
